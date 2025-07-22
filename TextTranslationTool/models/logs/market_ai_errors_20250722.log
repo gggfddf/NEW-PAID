@@ -1,0 +1,68 @@
+2025-07-22 17:59:37 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:37 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:37 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:37 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:39 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:39 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:39 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:39 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 5m after all retries
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 15m after all retries
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 1d after all retries
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:43 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 1w after all retries
+2025-07-22 17:59:43 - __main__ - ERROR - Error loading market data: No valid data fetched for RELIANCE.NS
+2025-07-22 17:59:49 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:49 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:49 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:49 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:51 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:51 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:51 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:51 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 5m after all retries
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 15m after all retries
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 1d after all retries
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 17:59:55 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 1w after all retries
+2025-07-22 17:59:55 - __main__ - ERROR - Error loading market data: No valid data fetched for RELIANCE.NS
+2025-07-22 18:05:05 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:05 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:05 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:05 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:07 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:07 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:07 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:07 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 5m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 5m after all retries
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 15m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 15m after all retries
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1d (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 1d after all retries
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Error fetching RELIANCE.NS 1w (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:11 - data.live_data_loader - ERROR - Failed to fetch RELIANCE.NS 1w after all retries
+2025-07-22 18:05:11 - __main__ - ERROR - Error loading market data: No valid data fetched for RELIANCE.NS
+2025-07-22 18:05:23 - data.live_data_loader - ERROR - Error fetching TCS.NS 5m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:23 - data.live_data_loader - ERROR - Error fetching TCS.NS 15m (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:23 - data.live_data_loader - ERROR - Error fetching TCS.NS 1d (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:23 - data.live_data_loader - ERROR - Error fetching TCS.NS 1w (attempt 1): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:25 - data.live_data_loader - ERROR - Error fetching TCS.NS 5m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:25 - data.live_data_loader - ERROR - Error fetching TCS.NS 15m (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:25 - data.live_data_loader - ERROR - Error fetching TCS.NS 1d (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:25 - data.live_data_loader - ERROR - Error fetching TCS.NS 1w (attempt 2): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Error fetching TCS.NS 5m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Failed to fetch TCS.NS 5m after all retries
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Error fetching TCS.NS 15m (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Failed to fetch TCS.NS 15m after all retries
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Error fetching TCS.NS 1d (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Failed to fetch TCS.NS 1d after all retries
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Error fetching TCS.NS 1w (attempt 3): PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-07-22 18:05:29 - data.live_data_loader - ERROR - Failed to fetch TCS.NS 1w after all retries
+2025-07-22 18:05:29 - __main__ - ERROR - Error loading market data: No valid data fetched for TCS.NS

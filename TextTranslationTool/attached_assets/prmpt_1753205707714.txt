@@ -1,0 +1,816 @@
+I'll create a comprehensive prompt engineering template for Cursor that incorporates all the requirements for building the Ultimate Market AI Engine. This prompt will be structured to guide the AI assistant through creating each component systematically.
+
+```markdown
+# 🚀 Ultimate Market AI Engine - Cursor Prompt Engineering Template
+
+## 🎯 Master Prompt Structure
+
+### Base Template for Each Component
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: [Component Name]
+🔍 CONTEXT: Building the Ultimate Market AI Engine - A proprietary market intelligence system
+📁 LOCATION: [File Path]
+🎨 STYLE: Production-ready Python with comprehensive documentation
+
+🎭 ROLE: You are an expert financial ML engineer building a production-grade market intelligence system that discovers its own patterns and provides institutional-level insights.
+
+📋 REQUIREMENTS:
+[Specific requirements for this component]
+
+🔧 TECHNICAL SPECS:
+[Technical specifications and constraints]
+
+📊 INPUT/OUTPUT:
+[Expected inputs and outputs]
+
+🧪 VALIDATION:
+[How to test and validate the component]
+
+📝 DELIVERABLE:
+Complete, production-ready Python code with:
+- Error handling and logging
+- Comprehensive docstrings
+- Type hints where appropriate
+- Configuration integration
+- Example usage
+
+⚡ IMPLEMENTATION APPROACH:
+1. First, I'll examine the existing codebase structure
+2. Create/modify the required files
+3. Implement all functionality with proper error handling
+4. Add comprehensive documentation
+5. Include validation and testing capabilities
+```
+
+---
+
+## 📂 Component-Specific Prompts
+
+### 1. Project Structure Setup
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Project Structure and Configuration
+🔍 CONTEXT: Ultimate Market AI Engine - Initial Setup
+📁 LOCATION: Root directory
+🎨 STYLE: Production-ready Python project structure
+
+🎭 ROLE: You are setting up the foundation for a proprietary market intelligence system that will analyze Indian stocks with ML-powered insights.
+
+📋 REQUIREMENTS:
+- Create complete project directory structure
+- Setup configuration system with ONLY stock symbol as editable parameter
+- Create requirements.txt with all necessary dependencies
+- Setup logging configuration
+- Create main orchestration file
+- Setup data directories and model directories
+- Create comprehensive README.md
+
+🔧 TECHNICAL SPECS:
+- Python 3.8+ compatibility
+- Support for Indian stock market data (NSE/BSE)
+- Modular architecture for easy component integration
+- Configuration via config.py with symbol as only parameter
+- Comprehensive error handling and logging setup
+
+📊 INPUT/OUTPUT:
+INPUT: None (initial setup)
+OUTPUT: Complete project structure with all directories and base files
+
+🧪 VALIDATION:
+- All directories created successfully
+- Configuration system works with symbol parameter
+- Dependencies installable via pip
+- Basic import tests pass
+
+📝 DELIVERABLE:
+Complete project structure with:
+- All necessary directories
+- config.py with symbol parameter
+- requirements.txt with versions
+- logging configuration
+- README.md with setup instructions
+
+⚡ IMPLEMENTATION APPROACH:
+1. Create directory structure
+2. Setup configuration system
+3. Create requirements.txt with all ML/finance dependencies
+4. Setup logging framework
+5. Create main.py orchestration template
+```
+
+### 2. Live Data Loader Component
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Live Data Loader with Multi-Timeframe Support
+🔍 CONTEXT: Ultimate Market AI Engine - Real-time Data Foundation
+📁 LOCATION: data/live_data_loader.py
+🎨 STYLE: Production-ready Python with async capabilities
+
+🎭 ROLE: You are building the critical data foundation that fetches live Indian market data across multiple timeframes for ML analysis.
+
+📋 REQUIREMENTS:
+- Fetch live OHLCV data for Indian stocks (NSE/BSE)
+- Support multiple timeframes: 5m, 15m, 1d, 1w
+- Minimum 2 years historical data for ML training
+- Handle market holidays and trading hours (9:15 AM - 3:30 PM IST)
+- Implement intelligent caching to avoid redundant API calls
+- Support both historical and real-time data
+- Data quality validation and cleaning
+- Corporate action adjustments
+
+🔧 TECHNICAL SPECS:
+- Use yfinance as primary source with fallback options
+- Implement exponential backoff for API failures
+- Return standardized pandas DataFrame format
+- Timezone-aware processing (IST)
+- Memory-efficient for large datasets
+- Async data fetching for multiple symbols
+- Rate limiting to respect API constraints
+
+📊 INPUT/OUTPUT:
+INPUT: symbol (str), timeframes (list), start_date, end_date
+OUTPUT: Dict of DataFrames {timeframe: DataFrame} with OHLCV data
+
+🧪 VALIDATION:
+- Test with major Indian stocks (RELIANCE.NS, TCS.NS, INFY.NS)
+- Validate data continuity and quality
+- Test timezone handling
+- Verify corporate action adjustments
+- Performance benchmarking
+
+📝 DELIVERABLE:
+Complete data/live_data_loader.py with:
+- DataLoader class with async support
+- Multi-timeframe data fetching
+- Comprehensive error handling
+- Data validation methods
+- Caching mechanism
+- Example usage
+
+⚡ IMPLEMENTATION APPROACH:
+1. Create DataLoader class with async methods
+2. Implement multi-timeframe fetching
+3. Add data validation and cleaning
+4. Setup caching system
+5. Add timezone handling for IST
+```
+
+### 3. ML Candlestick Pattern Discovery
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Proprietary ML Candlestick Pattern Discovery Engine
+🔍 CONTEXT: Ultimate Market AI Engine - Autonomous Pattern Recognition
+📁 LOCATION: pattern_analysis/ml_candlestick_patterns.py
+🎨 STYLE: Production-ready Python with advanced ML algorithms
+
+🎭 ROLE: You are creating an intelligent system that discovers NEW candlestick patterns using unsupervised ML, going beyond traditional patterns.
+
+📋 REQUIREMENTS:
+PROPRIETARY PATTERN DISCOVERY:
+- Use clustering (K-means, DBSCAN, GMM) to find recurring formations
+- Implement autoencoders for pattern feature extraction
+- Discover patterns across 1-20 candle sequences
+- Track pattern evolution across timeframes
+- Calculate pattern success rates and predictive power
+- Create pattern clustering to group similar formations
+- Build breakout prediction based on discovered patterns
+- NO COPYING of traditional patterns - discover NEW ones
+
+🔧 TECHNICAL SPECS:
+- Feature engineering: body/shadow ratios, relative positions, volume
+- Dimensionality reduction with PCA/t-SNE for visualization
+- Statistical significance testing (p-values < 0.05)
+- Pattern persistence validation across timeframes
+- Integration with backtesting for performance validation
+- Support for pattern combination analysis
+- Real-time pattern detection on new data
+
+📊 INPUT/OUTPUT:
+INPUT: OHLCV DataFrame with candlestick data
+OUTPUT: 
+- Dictionary of discovered patterns with metadata
+- Pattern success rates and confidence scores
+- Breakout predictions with probabilities
+- Pattern visualization data
+
+🧪 VALIDATION:
+- Minimum 50 unique patterns discovered
+- Statistical significance of patterns
+- Out-of-sample pattern validation
+- Performance comparison with traditional patterns
+- Pattern stability across market conditions
+
+📝 DELIVERABLE:
+Complete pattern_analysis/ml_candlestick_patterns.py with:
+- MLCandlestickDiscovery class
+- Multiple clustering algorithms
+- Pattern validation framework
+- Visualization methods
+- Pattern trading rules generation
+- Performance tracking
+
+⚡ IMPLEMENTATION APPROACH:
+1. Implement feature extraction from candlesticks
+2. Create multiple clustering algorithms
+3. Build pattern validation framework
+4. Add statistical significance testing
+5. Create pattern visualization tools
+```
+
+### 4. Advanced Technical Indicator Analysis (40+ Indicators)
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Comprehensive Technical Indicator Analysis System
+🔍 CONTEXT: Ultimate Market AI Engine - 40+ Indicator Pattern Analysis
+📁 LOCATION: technical_analysis/advanced_indicators.py
+🎨 STYLE: Production-ready Python with pattern recognition within indicators
+
+🎭 ROLE: You are building an advanced system that doesn't just calculate indicators but discovers patterns WITHIN each indicator.
+
+📋 REQUIREMENTS:
+IMPLEMENT 40+ INDICATORS WITH PATTERN ANALYSIS:
+
+Core Indicators with Custom Analysis:
+1. Bollinger Bands: Squeeze detection, band walking patterns
+2. VWAP: Flat VWAP significance, reversion patterns
+3. RSI: Divergence detection, cluster formation
+4. MACD: Histogram patterns, momentum shifts
+5. Volume (OBV, A/D): Accumulation patterns, breakout detection
+6. Moving Averages (SMA, EMA): Dynamic support/resistance
+7. Stochastic: %K/%D relationships, divergences
+8. ATR: Volatility expansion/contraction patterns
+9. Williams %R: Momentum reversal patterns
+10. CCI: Cyclical pattern detection
+11. ADX: Trend strength evolution
+12. Parabolic SAR: Reversal timing
+13. Ichimoku: Cloud patterns, support/resistance
+14. Fibonacci: Retracement completion probability
+15. Pivot Points: Cluster analysis
+
+PLUS 25+ CUSTOM COMPOSITE INDICATORS:
+- Create proprietary indicator combinations
+- Dynamic threshold adjustment based on volatility
+- Multi-timeframe indicator convergence
+- Indicator relationship analysis
+- ML-based indicator weighting
+
+🔧 TECHNICAL SPECS:
+- Vectorized calculations for performance
+- Pattern detection algorithms for each indicator
+- Dynamic parameter optimization
+- Indicator confluence scoring system
+- Real-time calculation capabilities
+- Memory-efficient implementation
+
+📊 INPUT/OUTPUT:
+INPUT: OHLCV DataFrame
+OUTPUT: 
+- DataFrame with all 40+ indicator values
+- Pattern analysis results for each indicator
+- Confluence scores and signals
+- Feature importance rankings
+
+🧪 VALIDATION:
+- Verify all indicator calculations
+- Test pattern detection accuracy
+- Validate on different market conditions
+- Performance benchmarking
+- Backtest indicator signals
+
+📝 DELIVERABLE:
+Complete technical_analysis/advanced_indicators.py with:
+- TechnicalAnalyzer class with 40+ indicators
+- Pattern detection for each indicator
+- Confluence scoring system
+- Dynamic threshold adjustment
+- Comprehensive documentation
+
+⚡ IMPLEMENTATION APPROACH:
+1. Implement all 40+ indicators with vectorized operations
+2. Add pattern detection algorithms for each
+3. Create confluence scoring system
+4. Build dynamic threshold adjustment
+5. Add multi-timeframe analysis
+```
+
+### 5. Deep Learning Prediction System
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Multi-Architecture Deep Learning Prediction System
+🔍 CONTEXT: Ultimate Market AI Engine - Neural Network Ensemble
+📁 LOCATION: models/deep_learning_ensemble.py
+🎨 STYLE: Production-ready PyTorch with financial optimization
+
+🎭 ROLE: You are building an advanced ensemble of neural networks specifically designed for market prediction with confidence scoring.
+
+📋 REQUIREMENTS:
+IMPLEMENT MULTIPLE ARCHITECTURES:
+1. LSTM Networks: Sequential pattern recognition
+2. CNN Layers: Visual chart pattern recognition
+3. Transformer/Attention: Long-range dependencies
+4. AutoEncoders: Anomaly detection
+5. Ensemble Methods: Combine all models
+
+MANDATORY PREDICTION OUTPUTS:
+- Movement Direction: "X% chance up/down"
+- Target Price: With confidence intervals
+- Confidence Level: High/Medium/Low with %
+- Time Horizon: Expected timeframe
+- Risk Assessment: Stop-loss recommendations
+- Feature Attribution: Which features drove prediction
+
+🔧 TECHNICAL SPECS:
+- PyTorch implementation with GPU support
+- Custom loss functions for financial data
+- Walk-forward validation
+- Ensemble weighting based on performance
+- Real-time prediction capabilities
+- Model versioning and checkpointing
+- Hyperparameter optimization
+
+📊 INPUT/OUTPUT:
+INPUT: 
+- Feature matrix from all components
+- Multi-timeframe data
+OUTPUT:
+- Prediction dictionary with all required fields
+- Confidence intervals
+- Feature importance scores
+- Model performance metrics
+
+🧪 VALIDATION:
+- Walk-forward validation on 2+ years
+- Sharpe ratio and max drawdown metrics
+- Comparison with buy-and-hold
+- Test on different market regimes
+- Real-time prediction latency
+
+📝 DELIVERABLE:
+Complete models/deep_learning_ensemble.py with:
+- All neural network architectures
+- Ensemble combination logic
+- Custom financial metrics
+- Training and prediction pipelines
+- Model persistence
+- Performance tracking
+
+⚡ IMPLEMENTATION APPROACH:
+1. Implement LSTM architecture
+2. Add CNN for pattern recognition
+3. Create Transformer model
+4. Build AutoEncoder for anomalies
+5. Combine in ensemble with dynamic weighting
+```
+
+### 6. Time-Based Cycle Analysis
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Comprehensive Time-Based Market Cycle Analysis
+🔍 CONTEXT: Ultimate Market AI Engine - Temporal Pattern Intelligence
+📁 LOCATION: time_analysis/market_cycles.py
+🎨 STYLE: Production-ready Python with statistical analysis
+
+🎭 ROLE: You are uncovering hidden temporal patterns in market behavior across multiple time dimensions.
+
+📋 REQUIREMENTS:
+IMPLEMENT CYCLICAL PATTERN DETECTION:
+- Intraday patterns: Hourly movement analysis
+- Day-of-week effects: Monday-Friday patterns
+- Monthly patterns: Month-end/start effects
+- Seasonal patterns: Quarterly behaviors
+- Gap analysis: Gap up/down with fill probability
+- Expiry effects: F&O expiry patterns
+- Maximum movement analysis per session
+- Reversal timing predictions
+- Special events: Earnings, dividends, splits
+
+🔧 TECHNICAL SPECS:
+- Statistical significance testing
+- Fourier analysis for cycle detection
+- Machine learning for pattern prediction
+- Timezone-aware processing (IST)
+- Integration with main prediction pipeline
+- Real-time pattern updates
+
+📊 INPUT/OUTPUT:
+INPUT: Multi-timeframe OHLCV data with timestamps
+OUTPUT:
+- Temporal pattern dictionary
+- Optimal timing recommendations
+- Cycle-based predictions
+- Statistical confidence scores
+
+🧪 VALIDATION:
+- Test patterns across 2+ years
+- Statistical significance validation
+- Out-of-sample testing
+- Pattern stability analysis
+
+📝 DELIVERABLE:
+Complete time_analysis/market_cycles.py with:
+- TemporalAnalyzer class
+- Multiple cycle detection algorithms
+- Statistical validation
+- Integration with predictions
+- Visualization methods
+
+⚡ IMPLEMENTATION APPROACH:
+1. Implement hourly pattern analysis
+2. Add day-of-week detection
+3. Create gap analysis algorithms
+4. Build special event detection
+5. Integrate with main pipeline
+```
+
+### 7. Visualization System
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Professional Candlestick Chart Visualization System
+🔍 CONTEXT: Ultimate Market AI Engine - Interactive Trading Interface
+📁 LOCATION: visualization/candlestick_charts.py
+🎨 STYLE: Production-ready Python with Plotly/Bokeh
+
+🎭 ROLE: You are creating professional-grade interactive candlestick charts that rival institutional trading platforms.
+
+📋 REQUIREMENTS:
+MANDATORY CANDLESTICK FEATURES:
+- Interactive candlestick charts (NO line charts)
+- Multi-timeframe views (5m, 15m, 1d, 1w)
+- Pattern highlighting with annotations
+- Support/resistance level overlays
+- Volume bars with color coding
+- Technical indicator overlays
+- Zoom, pan, and hover functionality
+- Pattern detection markers
+- Professional trading interface appearance
+
+🔧 TECHNICAL SPECS:
+- Use Plotly or Bokeh for interactivity
+- Support for real-time updates
+- Export to HTML and PNG
+- Mobile-responsive design
+- Dark/light theme support
+- Performance optimization for large datasets
+
+📊 INPUT/OUTPUT:
+INPUT: OHLCV data, patterns, indicators, predictions
+OUTPUT:
+- Interactive HTML charts
+- Static PNG exports
+- Embedded chart components
+
+🧪 VALIDATION:
+- Test with large datasets
+- Verify all interactions work
+- Mobile responsiveness
+- Export quality validation
+
+📝 DELIVERABLE:```
+charts.py with:
+- CandlestickVisualizer class
+- Multiple chart types
+- Pattern overlay system
+- Indicator integration
+- Export functionality
+- Real-time update support
+
+⚡ IMPLEMENTATION APPROACH:
+1. Create base candlestick chart class
+2. Add pattern overlay system
+3. Implement indicator overlays
+4. Add interactivity features
+5. Create export functionality
+```
+
+### 8. Report Generation System
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Dual Report Generation System
+🔍 CONTEXT: Ultimate Market AI Engine - Comprehensive Analysis Reports
+📁 LOCATION: reports/report_generator.py
+🎨 STYLE: Production-ready Python with professional formatting
+
+🎭 ROLE: You are creating a sophisticated report generation system that produces separate technical and price action analysis reports.
+
+📋 REQUIREMENTS:
+CREATE TWO SEPARATE REPORTS:
+
+1. TECHNICAL ANALYSIS REPORT:
+- All 40+ indicator values and patterns
+- Multi-timeframe technical alignment
+- ML-based technical predictions
+- Feature importance for technical factors
+- Technical entry/exit recommendations
+- Risk assessment from technical perspective
+
+2. PRICE ACTION ANALYSIS REPORT:
+- All discovered candlestick patterns
+- Chart pattern analysis
+- Volume-price relationships
+- Support/resistance levels with strength
+- Price action predictions
+- Pattern-based entry/exit points
+
+OUTPUT FORMATS:
+- Excel workbook (multi-sheet)
+- PDF reports (separate files)
+- HTML interactive reports
+- JSON data export
+
+🔧 TECHNICAL SPECS:
+- Use openpyxl for Excel generation
+- ReportLab or similar for PDF
+- Jinja2 templates for HTML
+- Professional formatting and branding
+- Automated chart embedding
+- Performance optimization
+
+📊 INPUT/OUTPUT:
+INPUT: All analysis results from components
+OUTPUT:
+- Technical_Analysis_Report.xlsx/pdf/html
+- Price_Action_Report.xlsx/pdf/html
+- Summary_Report.json
+- All charts as PNG
+
+🧪 VALIDATION:
+- Verify all data included
+- Test formatting consistency
+- Validate chart embedding
+- Check file generation
+
+📝 DELIVERABLE:
+Complete reports/report_generator.py with:
+- ReportGenerator class
+- Multiple format support
+- Template system
+- Chart integration
+- Automated generation
+
+⚡ IMPLEMENTATION APPROACH:
+1. Create report templates
+2. Implement Excel generation
+3. Add PDF creation
+4. Build HTML reports
+5. Create JSON export
+```
+
+### 9. Main Orchestration Pipeline
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Master Orchestration Pipeline
+🔍 CONTEXT: Ultimate Market AI Engine - Central Command System
+📁 LOCATION: main.py
+🎨 STYLE: Production-ready Python with comprehensive orchestration
+
+🎭 ROLE: You are building the conductor that orchestrates all components into a unified market intelligence system.
+
+📋 REQUIREMENTS:
+ORCHESTRATE ALL COMPONENTS:
+- Single parameter input: stock symbol
+- Coordinate data fetching across timeframes
+- Run all analysis components in sequence
+- Combine results from all modules
+- Generate comprehensive reports
+- Handle errors gracefully
+- Provide progress updates
+- Support batch processing
+
+MANDATORY OUTPUTS:
+- ML predictions with confidence
+- Technical analysis results
+- Price action analysis
+- Time-based insights
+- Interactive charts
+- Comprehensive reports
+
+🔧 TECHNICAL SPECS:
+- Asynchronous processing where possible
+- Component isolation for error handling
+- Configurable analysis depth
+- Memory management for large datasets
+- Progress tracking and logging
+- Result caching
+- Performance monitoring
+
+📊 INPUT/OUTPUT:
+INPUT: Stock symbol (e.g., 'RELIANCE.NS')
+OUTPUT:
+- Complete analysis results
+- All reports and visualizations
+- Performance metrics
+- Execution logs
+
+🧪 VALIDATION:
+- End-to-end testing
+- Component integration tests
+- Error scenario handling
+- Performance benchmarking
+- Memory usage monitoring
+
+📝 DELIVERABLE:
+Complete main.py with:
+- MarketIntelligenceEngine class
+- Component initialization
+- Orchestration logic
+- Error handling
+- Progress reporting
+- Result compilation
+
+⚡ IMPLEMENTATION APPROACH:
+1. Create main engine class
+2. Initialize all components
+3. Implement orchestration flow
+4. Add error handling
+5. Create progress reporting
+```
+
+### 10. Configuration System
+
+```
+You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet, operating exclusively in Cursor IDE.
+
+🎯 COMPONENT: Configuration Management System
+🔍 CONTEXT: Ultimate Market AI Engine - System Configuration
+📁 LOCATION: config.py
+🎨 STYLE: Production-ready Python configuration
+
+🎭 ROLE: You are creating the configuration system where ONLY the stock symbol is editable, with all other parameters optimized and fixed.
+
+📋 REQUIREMENTS:
+- Single editable parameter: SYMBOL
+- All other configurations are optimized defaults
+- Support for Indian market specifications
+- Timeframe configurations
+- Model hyperparameters
+- API configurations
+- Path configurations
+- Logging settings
+
+🔧 TECHNICAL SPECS:
+- Use Python dataclasses or Pydantic
+- Environment variable support
+- Validation for symbol format
+- Immutable non-symbol parameters
+- Clear documentation
+- Type hints throughout
+
+📊 INPUT/OUTPUT:
+INPUT: User-specified symbol
+OUTPUT: Complete configuration object
+
+🧪 VALIDATION:
+- Symbol format validation
+- Configuration loading tests
+- Default value verification
+
+📝 DELIVERABLE:
+Complete config.py with:
+- Configuration class
+- Symbol validation
+- All system parameters
+- Documentation
+- Usage examples
+
+⚡ IMPLEMENTATION APPROACH:
+1. Create configuration class
+2. Define all parameters
+3. Implement symbol validation
+4. Add documentation
+5. Create usage examples
+```
+
+---
+
+## 🚀 Implementation Strategy
+
+### Phase 1: Foundation (Components 1-2)
+```
+1. Start with project structure setup
+2. Implement live data loader
+3. Validate data fetching works
+```
+
+### Phase 2: Analysis Core (Components 3-5)
+```
+1. Build ML candlestick discovery
+2. Implement technical indicators
+3. Create deep learning models
+```
+
+### Phase 3: Intelligence Layer (Components 6-7)
+```
+1. Add time-based analysis
+2. Create visualization system
+```
+
+### Phase 4: Integration (Components 8-10)
+```
+1. Build report generation
+2. Create main orchestration
+3. Finalize configuration
+```
+
+---
+
+## 💡 Usage Instructions
+
+### For Each Component:
+1. Copy the specific component prompt
+2. Paste into Cursor chat
+3. Let the AI implement the complete component
+4. Review and test the implementation
+5. Move to the next component
+
+### Best Practices:
+- Implement components in order
+- Test each component before proceeding
+- Ensure all imports and dependencies are resolved
+- Validate outputs match specifications
+- Keep the single-parameter principle (only symbol editable)
+
+---
+
+## 🎯 Success Criteria Checklist
+
+### Each Component Must:
+- [ ] Be production-ready with error handling
+- [ ] Include comprehensive documentation
+- [ ] Have proper logging integration
+- [ ] Support the single-parameter design
+- [ ] Include validation and testing
+- [ ] Integrate seamlessly with other components
+
+### System Must Deliver:
+- [ ] ML-based predictions with confidence scores
+- [ ] 40+ technical indicators with pattern analysis
+- [ ] Discovered candlestick patterns (not traditional)
+- [ ] Time-based market insights
+- [ ] Professional candlestick visualizations
+- [ ] Separate technical and price action reports
+- [ ] Real-time data processing capability
+- [ ] Institutional-grade analysis quality
+
+---
+
+## 🔧 Troubleshooting Guide
+
+### Common Issues:
+1. **Data Fetching Errors**: Check symbol format (add .NS for NSE)
+2. **Memory Issues**: Implement batch processing for large datasets
+3. **Slow Performance**: Use vectorized operations and caching
+4. **Integration Errors**: Verify all component interfaces match
+
+### Debug Commands:
+```python
+# Test individual components
+python -m data.live_data_loader
+python -m pattern_analysis.ml_candlestick_patterns
+# etc.
+```
+
+---
+
+*This prompt engineering template ensures the creation of a truly proprietary, ML-powered market intelligence system that discovers its own patterns and provides institutional-level insights with complete automation.*
+```
+
+This comprehensive prompt engineering template provides:
+
+1. **Structured Approach**: Each component has a detailed prompt following the specified format
+2. **Clear Requirements**: Every prompt includes the specific requirements from your specifications
+3. **Implementation Guidance**: Step-by-step approach for the AI to follow
+4. **Integration Focus**: Ensures all components work together seamlessly
+5. **Production Quality**: Emphasizes error handling, documentation, and testing
+
+The template maintains the core principles:
+- Single parameter (stock symbol) operation
+- Proprietary pattern discovery (no copying traditional methods)
+- ML-based predictions with confidence scores
+- Separate technical and price action reports
+- Professional candlestick visualizations
+- Comprehensive 40+ indicator analysis
+- Real-time Indian market data support
+
+You can use these prompts sequentially in Cursor to build each component of your Ultimate Market AI Engine, ensuring a systematic and comprehensive implementation.
+Complete visualization/candlestick_
